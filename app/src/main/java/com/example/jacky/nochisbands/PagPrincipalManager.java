@@ -31,5 +31,12 @@ public class PagPrincipalManager extends AppCompatActivity {
         Intent intent = new Intent(this, Agenda.class);
         startActivity(intent);
     }
+    public void btnModificar(View view){
+        Intent intent= new Intent(this, Modificar_Grupo.class);
+        startActivity(intent);
+    }
+    public void btnEliminar(View view){
+        Intent intent=new Intent(this, Eliminar_Grupo.class);
+    }
 }
 
