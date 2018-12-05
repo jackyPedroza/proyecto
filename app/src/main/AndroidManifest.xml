@@ -30,10 +30,10 @@
         <activity android:name=".Modificar_Evento" />
         <activity android:name=".Evento_registrado" />
         <activity android:name=".Agenda" />
-        <activity android:name=".Agendar" />
         <activity android:name=".PagPrincipalUsuario" />
         <activity android:name=".ListaBandas" />
-        <activity android:name=".Eliminar_Grupo"></activity>
+        <activity android:name=".Eliminar_Grupo" />
+        <activity android:name=".Eliminar_Evento"></activity>
     </application>
 
 </manifest>

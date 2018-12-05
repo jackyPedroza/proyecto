@@ -16,7 +16,7 @@ public class Agenda extends AppCompatActivity {
     }
     public void btnAgendar(View view) {
         //clase que permite interaccion entre clases
-        Intent intent = new Intent(this, Agendar.class);
-        startActivity(intent);
+       // Intent intent = new Intent(this, Agendar.class);
+       // startActivity(intent);
     }
 }
