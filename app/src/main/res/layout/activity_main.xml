@@ -4,52 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="#f9ca98"
     tools:context=".MainActivity">
 
 
     <pl.droidsonroids.gif.GifImageView
-        android:layout_width="303dp"
-        android:layout_height="173dp"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="112dp"
-        android:layout_marginStart="21dp"
+        android:layout_width="305dp"
+        android:layout_height="220dp"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/mariachi"
         app:layout_constraintVertical_bias="0.071" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="299dp"
+        android:layout_width="249dp"
         android:layout_height="60dp"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="22dp"
         android:autoSizeTextType="none"
         android:text="BIENVENID@S"
         android:textAllCaps="true"
-        android:textColor="@android:color/background_dark"
+        android:textColor="#CC0000"
         android:textSize="36sp"
         android:textStyle="bold"
         tools:text="BIENVENID@S" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="114dp"
-        android:layout_height="104dp"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginEnd="12dp"
-        app:srcCompat="@drawable/usuarios" />
+        android:layout_width="80dp"
+        android:layout_height="78dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginEnd="69dp"
+        android:background="@drawable/imagen1"
+        app:srcCompat="@drawable/imagen1" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="94dp"
-        android:layout_height="107dp"
-        android:layout_above="@+id/btnUsuario"
-        android:layout_alignStart="@+id/textView2"
-        app:srcCompat="@drawable/usuarios" />
+        android:layout_width="79dp"
+        android:layout_height="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="113dp"
+        android:layout_marginStart="-5dp"
+        android:background="@drawable/imagen1"
+        app:srcCompat="@drawable/imagen1" />
 
     <Button
         android:id="@+id/btnUsuario"
@@ -57,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/btnManager"
-        android:layout_marginEnd="41dp"
+        android:layout_marginEnd="23dp"
         android:background="@android:color/transparent"
         android:onClick="btnUsuario"
         android:text="USUARIO"
@@ -66,11 +67,12 @@
 
     <Button
         android:id="@+id/btnManager"
-        android:layout_width="141dp"
+        android:layout_width="129dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginBottom="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="60dp"
         android:background="@android:color/transparent"
         android:onClick="btnManager"
         android:text="MANAGER"
@@ -80,13 +82,13 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="253dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textView"
-        android:layout_marginEnd="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
         android:text="NOCHIS BAND'S"
-        android:textColor="@android:color/background_dark"
+        android:textColor="#CC0000"
         android:textSize="30sp"
         android:textStyle="bold|italic" />
 

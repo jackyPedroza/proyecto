@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/musica"
+    android:background="#f9ca98"
     tools:context=".PagPrincipalUsuario">
 
     <TextView
@@ -21,10 +21,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.345" />
 
     <Button
         android:id="@+id/btnBanda"
@@ -42,9 +41,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/btnMariachi"
@@ -62,9 +62,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <Button
         android:id="@+id/btnNorteño"
@@ -82,9 +83,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.732" />
+        app:layout_constraintVertical_bias="0.897" />
 
     <Button
         android:id="@+id/btnSierreño"
@@ -102,28 +104,32 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.498" />
 
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="294dp"
-        android:layout_height="76dp"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Nochis Band's"
-        android:textAllCaps="true"
-        android:textColor="#FF9900"
-        android:textSize="36sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sombrero" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sombrero"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="16dp" />
+
 </android.support.constraint.ConstraintLayout>
