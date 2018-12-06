@@ -33,7 +33,11 @@
         <activity android:name=".PagPrincipalUsuario" />
         <activity android:name=".ListaBandas" />
         <activity android:name=".Eliminar_Grupo" />
-        <activity android:name=".Eliminar_Evento"></activity>
+        <activity android:name=".Eliminar_Evento" />
+        <activity android:name=".ListaMariachi" />
+        <activity android:name=".ListaNortenos" />
+        <activity android:name=".ListaSierrenos" />
+        <activity android:name=".ListaEventos"></activity>
     </application>
 
 </manifest>

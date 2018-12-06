@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
@@ -50,7 +51,6 @@ public class Registrar_Grupo extends AppCompatActivity implements Response.Liste
     public final static String IPFueraM = "PFueraM";
     public final static String INGrupoM = "NGrupoM";
     public final static String Iid_managerM = "id_managerM";
-    public final static String Ifoto ="Foto";
 
     //subir foto
     private static final int COD_SELECCIONADA = 10;
@@ -84,7 +84,9 @@ public class Registrar_Grupo extends AppCompatActivity implements Response.Liste
         PFuera=findViewById(R.id.edtPrecioF);
         NUMGrup=findViewById(R.id.edtNumBan);
         id_manager=findViewById(R.id.edtNM);
-        Foto = findViewById(R.id.subirFoto);
+        ImageView Foto = (ImageView) findViewById(R.id.subirFoto);
+        Bitmap bitmap = ((BitmapDrawable)Foto.getDrawable()).getBitmap();
+
         requestQueue = Volley.newRequestQueue(this);
 
     }
@@ -130,7 +132,7 @@ public class Registrar_Grupo extends AppCompatActivity implements Response.Liste
                 intent.putExtra(IPFueraM, PFuera.getText().toString());
                 intent.putExtra(INGrupoM, NUMGrup.getText().toString());
                 intent.putExtra(Iid_managerM, id_manager.getText().toString());
-                //intent.putExtra(IFoto, Foto.get.Text().toString());
+                intent.putExtra("bitMap",bitmap);
                 startActivity(intent);
             }else{
                 //no existe

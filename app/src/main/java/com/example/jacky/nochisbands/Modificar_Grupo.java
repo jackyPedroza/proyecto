@@ -1,5 +1,6 @@
 package com.example.jacky.nochisbands;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,8 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.io.File;
 
 public class Modificar_Grupo extends AppCompatActivity implements  Response.Listener<JSONObject>, Response.ErrorListener {
     public final static String INombreGrupo = "NombreGrupoM";
@@ -47,7 +50,8 @@ public class Modificar_Grupo extends AppCompatActivity implements  Response.List
         PFueraM=findViewById(R.id.edtPrecioF2);
         NUMGrupoM=findViewById(R.id.edtNumBan2);
         id_managerM=findViewById(R.id.edtNM2);
-        Foto = findViewById(R.id.subirFoto);
+
+
         requestQueue = Volley.newRequestQueue(this);
 
         Intent intent = getIntent();
@@ -60,6 +64,10 @@ public class Modificar_Grupo extends AppCompatActivity implements  Response.List
         PFueraM.setText(intent.getStringExtra(Registrar_Grupo.IPFueraM));
         NUMGrupoM.setText(intent.getStringExtra(Registrar_Grupo.INGrupoM));
         id_managerM.setText(intent.getStringExtra(Registrar_Grupo.Iid_managerM));
+        Bitmap bitmap = intent.getParcelableExtra("bitMap");
+        ImageView icono = (ImageView) findViewById(R.id.subirFoto);
+        icono.setImageBitmap(bitmap);
+
     }
     public void btnGModif (View view) {
 
