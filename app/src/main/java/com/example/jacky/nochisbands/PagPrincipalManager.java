@@ -41,5 +41,10 @@ public class PagPrincipalManager extends AppCompatActivity {
         Intent intent=new Intent(this, Eliminar_Evento.class);
         startActivity(intent);
     }
+    public void regresar(View view) {
+        //clase que permite interaccion entre clases
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
 

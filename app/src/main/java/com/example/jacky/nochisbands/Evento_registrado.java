@@ -41,4 +41,9 @@ public class Evento_registrado extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
     }
+    public void regresar(View view) {
+        //clase que permite interaccion entre clases
+        Intent intent = new Intent(this, PagPrincipalManager.class);
+        startActivity(intent);
+    }
 }
